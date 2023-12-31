@@ -1,16 +1,12 @@
-import React from 'react'
-import Logout from '../auth/Logout'
+
 import Sidebar from '../Sidebar'
 import Tooth from './Tooth'
 import Profil from './Profil'
 import Group from './Group'
 import Groupe from './Groupe_student'
-
-import NotFound404 from '../auth/NotFound404'
 import { useParams } from 'react-router-dom'
 import Student from './Student'
 import PW from './PW'
-import Dashboard from './Dashboard'
 import Statistiques from './Statistiques'
 
 const ProfHome = () => {
@@ -18,12 +14,7 @@ const ProfHome = () => {
 
   const renderComponent = () => {
     switch (componentName) {
-      case 'dashboard':
-        return (
-          <div className='w-4/5'>
-            <Dashboard />
-            <Sidebar />
-          </div>);
+      
            case 'groupe':
             return (
               <div className='w-4/5'>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -118,14 +118,14 @@ const Groupe = () => {
         <div className="flex w-1/2 m-4 bg-white p-5 rounded-xl justify-center border border-black shadow-xl">
           <input
             className="flex text-gray-700 outline-none mr-4 border-gray-300 border py-1 pl-4 rounded-xl focus:ring-1 w-1/3"
-            placeholder="Enter major code"
+            placeholder="Enter  code"
             name="code"
             onChange={handleMajor}
             value={major.code}
           />
           <input
             className="flex text-gray-700 outline-none border-gray-300 border py-1 pl-4 rounded-xl focus:ring-1 w-1/3"
-            placeholder="Enter major name"
+            placeholder="Enter  year"
             name="year"
             onChange={handleMajor}
             value={major.year}
@@ -157,7 +157,7 @@ const Groupe = () => {
                 <div className="flex items-center w-full font-semibold text-white text-lg rounded-t-md border-b bg-black py-3 ">
                   <p className="text-center w-1/4">Id</p>
                   <p className="text-center w-1/4">Code</p>
-                  <p className="text-center w-1/4">Name</p>
+                  <p className="text-center w-1/4">Year</p>
                   <p className="text-center w-1/4">Action</p>
                 </div>
                 {majors.map((major, index) => (

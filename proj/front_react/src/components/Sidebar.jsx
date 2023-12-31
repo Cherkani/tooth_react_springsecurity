@@ -36,14 +36,10 @@ const Sidebar = () => {
 
   const menus = [
     { name: "Profile", link: "/professor/profil", icon: BsListTask },
-    {
-      name: "Professor Management",
-      link: "/professor",
-      icon: FaChalkboardTeacher,
-    },
+  
     { name: "Groups", link: "/professor/groupe", icon: AiOutlineTeam },
     { name: "Students", link: "/professor/student", icon: PiStudentThin },
-    { name: "Group Students", link: "/groupestudent", icon: AiOutlineTeam },
+   
     { name: "Teeth", link: "/professor/teeth", icon: PiToothThin },
    
    

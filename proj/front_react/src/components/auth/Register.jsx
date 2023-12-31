@@ -84,9 +84,7 @@ const Register = () => {
                 <h1 class="block  text-2xl font-bold text-gray-800 dark:text-white">Sign up</h1>
                 <p class="mt-2   text-sm text-gray-600 dark:text-gray-400">
                 
-                  <a class="text-blue-600 ml-2 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/login">
-                    Sign in 
-                  </a>
+                
                 </p>
               </div>
 
@@ -173,8 +171,21 @@ const Register = () => {
                     <p class="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
                   </div>
                   {/* {err && <p class="text-sm text-red-600 mt-2" >{err}</p>} */}
-                  <button onClick={submit} class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-black hover:text-white disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-black"
+               
+              
+
+
+<div className="flex gap-4">
+
+  <button onClick={submit} className="flex-1 py-3 px-4 inline-flex justify-center items-center text-sm font-semibold rounded-lg border border-transparent bg-black text-white hover:bg-black hover:text-white disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-black"
 >Sign up </button>
+<a
+    href="/login"
+    className="flex-1 py-3 px-4 inline-flex justify-center items-center text-sm font-semibold rounded-lg border border-transparent bg-gray-300 text-black hover:bg-gray-400 hover:text-black disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-gray-600"
+  >
+    Sign in 
+  </a>
+</div>
                 </div>
 
 

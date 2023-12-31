@@ -214,7 +214,7 @@
                     Select group for student
                   </option>
                   {majors.map((major, index) => (
-                    <option value={major.id}>{major.year}</option>
+                    <option value={major.id}>{major.code}</option>
                   ))}
                 </select>
               </span>

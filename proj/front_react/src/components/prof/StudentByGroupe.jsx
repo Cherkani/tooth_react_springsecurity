@@ -67,7 +67,7 @@ const Statistiques = () => {
             <option className="text-gray-700">Select groupe</option>
             {majors.map((m) => (
               <option key={m.id} value={m.id}>
-                {m.year}
+                {m.code}
               </option>
             ))}
           </select>

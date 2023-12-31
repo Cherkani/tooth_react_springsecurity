@@ -48,7 +48,7 @@ const Profil = () => {
   return (
     <div className='flex w-full justify-center items-center mt-32'>
       {loading ? (
-        <DotLoader color='#36D7B7' loading={loading} size={150} />
+      loading
       ) : (
         <div className='flex flex-col w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 justify-center items-center rounded-xl p-5 bg-gray-200'>
           <div className='flex justify-center items-center'>
